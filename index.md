@@ -4,7 +4,7 @@
 
 ### Education
 
-	* B.Eng. in Computer Engineering, Chulalongkorn University (Expected 2021)
+* B.Eng. in Computer Engineering, Chulalongkorn University (Expected 2021)
 
 ---
 
