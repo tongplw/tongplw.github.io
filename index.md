@@ -2,6 +2,14 @@
 
 ---
 
+### Contact
+
+- Phone: (+66) 90-885-9978
+- E-mail: plw.hwm@gmail.com
+- E-mail: 6030400021@student.chula.ac.th
+
+---
+
 ### Education
 
 * B.Eng. in Computer Engineering, [Chulalongkorn University](https://www.chula.ac.th/) *(Expected 2021)*
