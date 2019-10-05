@@ -1,7 +1,5 @@
 **Pollawat Hongwimol** (พลวัต หงส์วิมล) is a student majoring in Computer Engineering, Chulalongkorn University.
 
-see [page 2](/page2.md)
-
 ---
 
 ### Contact
@@ -27,3 +25,8 @@ see [page 2](/page2.md)
 - Software Engineering Intern at [Palawatr Co., Ltd.](https://www.palawatr.co.th/home) *(July 2018 - August 2018)*
 
 ---
+
+### Beta
+
+* [page 2](/page2.md)
+* [page 3](/page3.html)
