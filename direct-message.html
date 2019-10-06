@@ -1,0 +1,60 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Direct Message</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container body-content">
+	<div class="container">
+		<div class="row justify-content-start" style="padding-top:10px;">
+		<h1>Direct Message via Line Notify</h1>
+		</div>
+		<div class="row justify-content-start" style="padding-top:10px;">
+			<div class="col" style="padding-top:10px;">
+			<label>Message here</label>
+		</div>
+	</div>
+	<input class="form-control" id="myText" placeholder="Write something here!"></input>
+	<div class="row justify-content: flex-end" style="padding-top:10px;padding-right:15px;float: right">
+		<button class="btn btn-primary" id="mySendBtn">send</button>
+	</div>
+
+		<script>
+			document.getElementById("mySendBtn").addEventListener("click", function() {
+
+				var message = document.getElementById("myText").value;
+				
+				if (message != "") {
+					const xhr = new XMLHttpRequest();
+					xhr.open("POST", "https://iot.makersmagazine.in.th/webLine/Line_Notify.php");
+					xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr.send("token=NsU2MQId567WxTT9Kapnw17iNaXpDJ2etAFJ3yNhC8m&msg="+message); 
+					document.getElementById("myText").value = "";
+					document.getElementById("mySendBtn").innerText = "The message has been sent!";
+				}
+			});
+			document.getElementById("myText").addEventListener("keydown", function(event) {
+				document.getElementById("mySendBtn").innerText = "send";
+				if (event.keyCode === 13) {
+					document.getElementById("mySendBtn").click();
+				}
+			});
+		</script>
+
+	</div>
+
+	</div>
+</body>
+
+</html>
+
+</html>
