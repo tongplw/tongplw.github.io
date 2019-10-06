@@ -31,19 +31,14 @@
 		<script>
 			document.getElementById("mySendBtn").addEventListener("click", function() {
 
-				const url = "https://notify-api.line.me/api/notify";
+				// const url = "https://notify-api.line.me/api/notify";
 				const token = "NsU2MQId567WxTT9Kapnw17iNaXpDJ2etAFJ3yNhC8m";
 				var message = document.getElementById("myText").value;
-				
-				var data = new FormData();
-				data.append("payload", "message=$message");
 
-				const Http = new XMLHttpRequest();
-				Http.open("POST", url);
-				Http.setRequestHeader("Authorization", "Bearer $token");
-				Http.setRequestHeader("Access-Control-Allow-Origin", "https://notify-api.line.me");
-				Http.send();
-
+				const xhr = new XMLHttpRequest();
+				xhr.open("POST", "https://iot.makersmagazine.in.th/webLine/Line_Notify.php");
+				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhr.send("token="+token+"&msg="+message); 
 			});
 		</script>
 
