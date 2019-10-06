@@ -20,13 +20,13 @@
 
 ### Internship Experience
 
-- Business Development Intern at [Settrade](https://www.settrade.com) which is a department in [The Stock Exchange of Thailand](https://www.set.or.th/) *(June 2019 - August 2019)*
+- Business Development Intern at [Settrade](https://www.settrade.com), [The Stock Exchange of Thailand](https://www.set.or.th/) *(June 2019 - August 2019)*
 
 - Software Engineering Intern at [Palawatr Co., Ltd.](https://www.palawatr.co.th/home) *(July 2018 - August 2018)*
 
 ---
 
-### Beta
+<!-- ### Beta
 
 * [page 2](/page2.md)
-* [page 3](/page3.html)
+* [page 3](/page3.html) -->
