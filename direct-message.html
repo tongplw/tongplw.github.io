@@ -35,11 +35,16 @@
 				
 				if (message != "") {
 					const xhr = new XMLHttpRequest();
+					xhr.onreadystatechange = function() {
+						if (xhr.readyState == XMLHttpRequest.DONE) {
+							document.getElementById("mySendBtn").innerText = "The message has been sent!";
+						}
+					}
 					xhr.open("POST", "https://iot.makersmagazine.in.th/webLine/Line_Notify.php");
 					xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					xhr.send("token=NsU2MQId567WxTT9Kapnw17iNaXpDJ2etAFJ3yNhC8m&msg="+message); 
 					document.getElementById("myText").value = "";
-					document.getElementById("mySendBtn").innerText = "The message has been sent!";
+					document.getElementById("mySendBtn").innerText = "sending...";
 				}
 			});
 			document.getElementById("myText").addEventListener("keydown", function(event) {
