@@ -1,8 +1,57 @@
-<html>
 
-	<body>
-		<h1>Hey this is header 1</h1>
-		<p>adsfasdfasdfasdfasdfasdfasdfdf</p>
-	</body>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Beta Version</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container body-content">
+	<div class="container">
+		<div class="row justify-content-start" style="padding-top:10px;">
+		<h1>Beta Version</h1>
+		</div>
+		<div class="row justify-content-start" style="padding-top:10px;">
+			<div class="col" style="padding-top:10px;">
+			<label>Message here</label>
+			</div>
+		</div>
+		<input class="form-control" id="myText"></input>
+		<div class="row justify-content: flex-end" style="padding-top:10px;">
+			<button class="btn btn-primary" id="mySendBtn">send</button>
+		</div>
+
+		<script>
+			document.getElementById("mySendBtn").addEventListener("click", function() {
+
+				const url = "https://notify-api.line.me/api/notify";
+				const token = "NsU2MQId567WxTT9Kapnw17iNaXpDJ2etAFJ3yNhC8m";
+				var message = document.getElementById("myText").value;
+				
+				var data = new FormData();
+				data.append("payload", "message=$message");
+
+				const Http = new XMLHttpRequest();
+				Http.open("POST", url);
+				Http.setRequestHeader("Authorization", "Bearer $token");
+				Http.setRequestHeader("Access-Control-Allow-Origin", "https://notify-api.line.me");
+				Http.send();
+
+			});
+		</script>
+
+	</div>
+
+	</div>
+</body>
+
+</html>
 
 </html>
