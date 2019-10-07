@@ -33,7 +33,7 @@
 
 				var message = document.getElementById("myText").value;
 				
-				if (message != "") {
+				if (message != "" && document.getElementById("mySendBtn").innerText != "sending...") {
 					const xhr = new XMLHttpRequest();
 					xhr.onreadystatechange = function() {
 						if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -47,9 +47,10 @@
 					document.getElementById("mySendBtn").innerText = "sending...";
 				}
 			});
+
 			document.getElementById("myText").addEventListener("keydown", function(event) {
 				document.getElementById("mySendBtn").innerText = "send";
-				if (event.keyCode === 13) {
+				if (event.keyCode == 13 && document.getElementById("mySendBtn").innerText != "sending...") {
 					document.getElementById("mySendBtn").click();
 				}
 			});
