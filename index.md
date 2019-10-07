@@ -28,6 +28,6 @@
 
 ### Beta Version Page
 
-* [Direct Message via LineNotify to me](/direct-message.html)
+* [Direct Message via Line Notify to me](/direct-message.html)
 
 <!-- * [page 2](/page2.md) -->
