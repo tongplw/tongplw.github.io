@@ -21,13 +21,16 @@
 ### Internship Experience
 
 - Infrastructure Engineer Intern at [118 Sigma](https://118sigma.com/) *(August 2019 - Present)*
+
 - Back-End Developer Intern at [Codium](https://www.codium.co/) *(December 2019)*
+
 - Business Development Intern at [Settrade](https://www.settrade.com), [The Stock Exchange of Thailand](https://www.set.or.th/) *(June 2019 - August 2019)*
+
 - Software Engineering Intern at [Palawatr](https://www.palawatr.co.th/home) *(July 2018 - August 2018)*
 
 ---
 
-### Beta Version Page
+### Just For Fun
 
 * [Direct Message via Line Notify to me](/direct-message.html)
 
