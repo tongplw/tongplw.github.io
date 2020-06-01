@@ -20,6 +20,8 @@
 
 ### Internship Experience
 
+- Data Scientist Intern at [Future Innovation & Research in Science and Technology (FIRST)](http://www.first.chula.ac.th/) *(June 2020 - Present)*
+
 - Infrastructure Engineer Intern at [118 Sigma](https://118sigma.com/) *(August 2019 - Present)*
 
 - Back-End Developer Intern at [Codium](https://www.codium.co/) *(December 2019)*
